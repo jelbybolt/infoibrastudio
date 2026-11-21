@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#EFDD8D">
+  <title>Nombre del Cliente</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ========== FONDO EN DEGRADADO ========== -->
+  <div class="bg" aria-hidden="true"></div>
+
+  <!-- ========== TARJETA ========== -->
+  <main class="card">
+
+    <!-- Foto -->
+    <div class="portrait">
+      <div class="photo">
+        <img id="photo" alt="Foto del cliente" hidden>
+        <span id="initials" aria-hidden="true">ND</span>
+      </div>
+      <svg class="spark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 2l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"
+              fill="#EFDD8D" stroke="#F4FDAF" stroke-width="2.5" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- Textos (se llenan desde script.js) -->
+    <h1 id="name">Nombre del Cliente</h1>
+    <p class="role" id="role"></p>
+    <p class="bio" id="bio"></p>
+
+    <!-- Enlaces -->
+    <ul class="links">
+
+      <li>
+        <a class="btn wa" id="wa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+            <path d="M3 21l1.65-4.8A9 9 0 1 1 8 19.4z"/>
+            <path d="M9 8.6c-.5 1 0 2.8 1.6 4.5s3.4 2.3 4.4 1.9l.9-1.2-1.9-1-.8.7c-.7-.3-1.6-1.1-2-2l.7-.8-1-1.9z"
+                  fill="currentColor" stroke="none"/>
+          </svg>
+          WhatsApp <small>Escríbeme</small>
+        </a>
+      </li>
+
+      <li>
+        <a class="btn ig" id="ig" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <rect x="3" y="3" width="18" height="18" rx="5.5"/>
+            <circle cx="12" cy="12" r="4.2"/>
+            <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
+          </svg>
+          Instagram <small>Sígueme</small>
+        </a>
+      </li>
+
+      <li>
+        <a class="btn fb" id="fb" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.5 22v-8.2h2.8l.5-3.4h-3.3V8.2c0-1 .4-1.7 1.8-1.7H17V3.5c-.3 0-1.3-.2-2.5-.2-2.6 0-4.2 1.5-4.2 4.3v2.8H7.5v3.4h2.8V22z"/>
+          </svg>
+          Facebook <small>Visítame</small>
+        </a>
+      </li>
+
+    </ul>
+
+  
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
